@@ -22,19 +22,7 @@
 
 ---
 
-## Perché TexVoice? / Why TexVoice?
-
-**🇮🇹 Italiano:**
-Ho creato TexVoice perché volevo un modo semplice per trasformare documenti e testi in audio da ascoltare ovunque, senza dover dipendere da servizi cloud, abbonamenti o account. Dopo aver provato diverse soluzioni esistenti, tutte richiedevano connessione internet o login, ho deciso di costruire qualcosa che funzionasse interamente sul dispositivo, rispettando la privacy dell'utente.
-
-Se anche tu la trovi utile, fantastico! Se invece trovi qualcosa che non funziona come dovrebbe o hai idee su come migliorarla, ti invito ad aprire un'issue. Questo progetto nasce dalla community e per la community.
-
-**🇬🇧 English:**
-I created TexVoice because I wanted a simple way to transform documents and texts into audio I could listen to anywhere, without depending on cloud services, subscriptions, or accounts. After trying several existing solutions—all of which required internet connection or login—I decided to build something that works entirely on-device, respecting user privacy.
-
-If you find it useful too, that's great! If instead you find something that doesn't work as it should or have ideas on how to improve it, please open an issue. This project comes from the community and is for the community.
-
----
+# TexVoice
 
 ## Panoramica / Overview
 
@@ -60,13 +48,11 @@ TexVoice is an iOS application that transforms any text or PDF into high-quality
 - **100% Offline**: Tutta l'elaborazione avviene sul dispositivo. Nessun server, nessun cloud
 - **Nessun Login**: Inizia subito senza creare account o fornire email
 - **Nessun Tracciamento**: I tuoi dati rimangono sul tuo dispositivo
-- **Nessun Abbonamento**: Tutte le funzionalità sono disponibili senza costi ricorrenti
 
 **🇬🇧 English:**
 - **100% Offline**: All processing happens on-device. No servers, no cloud
 - **No Login Required**: Start immediately without creating accounts or providing email
 - **No Tracking**: Your data stays on your device
-- **No Subscription**: All features are available without recurring costs
 
 ---
 
@@ -75,15 +61,13 @@ TexVoice is an iOS application that transforms any text or PDF into high-quality
 **🇮🇹 Italiano:**
 - **Importazione PDF**: Carica documenti PDF e estrai automaticamente il testo
 - **Scrittura Diretta**: Incolla o scrivi direttamente il testo da convertire
-- **10 Voci AI Premium**: 5 voci femminili (Aurora, Sofia, Emma, Luna, Stella) e 5 maschili (Marco, Luca, Leo, Alex, Matteo)
-- **Intonazione Naturale**: Le voci AI sono state addestrate per un parlato naturale e piacevole da ascoltare
+- **10 Voci AI**: 5 voci femminili (Aurora, Sofia, Emma, Luna, Stella) e 5 maschili (Marco, Luca, Leo, Alex, Matteo)
 - **5 Lingue Supportate**: Inglese, Spagnolo, Francese, Portoghese e Coreano
 
 **🇬🇧 English:**
 - **PDF Import**: Upload PDF documents and automatically extract text
 - **Direct Writing**: Paste or directly write the text to convert
-- **10 Premium AI Voices**: 5 female voices (Aurora, Sofia, Emma, Luna, Stella) and 5 male (Marco, Luca, Leo, Alex, Matteo)
-- **Natural Intonation**: AI voices are trained for natural, pleasant-sounding speech
+- **10 AI Voices**: 5 female voices (Aurora, Sofia, Emma, Luna, Stella) and 5 male (Marco, Luca, Leo, Alex, Matteo)
 - **5 Languages Supported**: English, Spanish, French, Portuguese, and Korean
 
 ---
@@ -91,14 +75,14 @@ TexVoice is an iOS application that transforms any text or PDF into high-quality
 ### Gestione Capitoli / Chapter Management
 
 **🇮🇹 Italiano:**
-- **Rilevamento Automatico**: L'app identifica automaticamente i capitoli nei PDF importati
+- **Rilevamento Automatico**: L'app identifica automaticamente i capitoli nei testi
 - **Editor Visuale**: Modifica, rinomina, unisci o dividi i capitoli come preferisci
 - **Anteprima Contenuto**: Visualizza un'anteprima del contenuto di ogni capitolo
 - **Conteggio Parole**: Ogni capitolo mostra il numero di parole per stimare la durata
 - **Divisione Intelligente**: Per testi lunghi, l'app divide automaticamente in parti gestibili
 
 **🇬🇧 English:**
-- **Automatic Detection**: The app automatically identifies chapters in imported PDFs
+- **Automatic Detection**: The app automatically identifies chapters in texs
 - **Visual Editor**: Edit, rename, merge, or split chapters as you prefer
 - **Content Preview**: View a preview of each chapter's content
 - **Word Count**: Each chapter shows word count to estimate duration
@@ -111,27 +95,23 @@ TexVoice is an iOS application that transforms any text or PDF into high-quality
 **🇮🇹 Italiano:**
 - **Salvataggio Locale**: Gli audiolibri generati vengono salvati nella tua libreria personale
 - **Ascolto Offline**: Ascolta i tuoi audiolibri ovunque, senza connessione internet
-- **Metadati Completi**: Ogni audiolibro mostra titolo, autore, durata e voce utilizzata
-- **Gestione Semplice**: Elimina o riproduci i tuoi audiolibri con un tap
+- **Metadati Completi**: Ogni audiolibro mostra titolo, autore, durata, data creazione e voce utilizzata
 
 **🇬🇧 English:**
 - **Local Storage**: Generated audiobooks are saved to your personal library
 - **Offline Listening**: Listen to your audiobooks anywhere, without internet connection
-- **Complete Metadata**: Each audiobook shows title, author, duration, and voice used
-- **Simple Management**: Delete or play your audiobooks with a tap
+- **Complete Metadata**: Each audiobook shows title, author, duration, creation date and voice used
 
 ---
 
 ### Interfaccia Utente / User Interface
 
 **🇮🇹 Italiano:**
-- **Design Minimalista**: Interfaccia pulita e intuitiva ispirata al design Braun
 - **Tema Dark/Light**: Supporto automatico per la modalità chiara e scura del sistema
 - **Processo in 3 Step**: Carica → Scegli Voce → Ascolta
 - **Feedback Visivo**: Barre di progresso durante la generazione dell'audio
 
 **🇬🇧 English:**
-- **Minimalist Design**: Clean and intuitive interface inspired by Braun design
 - **Dark/Light Theme**: Automatic support for system light and dark mode
 - **3-Step Process**: Upload → Choose Voice → Listen
 - **Visual Feedback**: Progress bars during audio generation
@@ -279,6 +259,39 @@ TexVoice is an iOS application that transforms any text or PDF into high-quality
 - 🔜 **New Voices**: Additional AI voices with different styles and accents
 - 🔜 **Document Support**: Import of other formats (EPUB, DOCX, TXT)
 - 🔜 **Android**: Version for Android devices
+
+---
+
+## 🙏 Ringraziamenti e Riferimenti / Acknowledgments & References
+
+### Supertonic 2 — Text-to-Speech Model
+
+<p align="center">
+  <a href="https://huggingface.co/Supertone/supertonic-2"><img src="https://img.shields.io/badge/🤗_Model-Hugging_Face-yellow?style=for-the-badge" alt="Model"></a>
+  <a href="https://github.com/supertone-inc/supertonic"><img src="https://img.shields.io/badge/💻_Code-GitHub-black?style=for-the-badge&logo=github" alt="Code"></a>
+</p>
+
+**🇮🇹 Italiano:**
+Il cuore di TexVoice è alimentato da [Supertonic 2](https://github.com/supertone-inc/supertonic), un modello TTS ultra-veloce e multilingue sviluppato da [Supertone Inc](https://supertone.ai/). Supertonic è progettato per l'elaborazione on-device con prestazioni eccezionali — fino a **167× più veloce del tempo reale** — utilizzando solo 66M di parametri.
+
+**🇬🇧 English:**
+The heart of TexVoice is powered by [Supertonic 2](https://github.com/supertone-inc/supertonic), an ultra-fast, multilingual TTS model developed by [Supertone Inc](https://supertone.ai/). Supertonic is designed for on-device processing with exceptional performance — up to **167× faster than real-time** — using only 66M parameters.
+
+- **License**: [OpenRAIL-M](https://huggingface.co/Supertone/supertonic-2/blob/main/LICENSE)
+- **Copyright**: © 2026 Supertone Inc.
+
+---
+
+### ONNX Runtime
+
+**🇮🇹 Italiano:**
+L'inferenza dei modelli TTS è eseguita grazie a [ONNX Runtime](https://onnxruntime.ai/), il motore di inferenza cross-platform ad alte prestazioni sviluppato da Microsoft.
+
+**🇬🇧 English:**
+TTS model inference is powered by [ONNX Runtime](https://onnxruntime.ai/), the high-performance cross-platform inference engine developed by Microsoft.
+
+- **License**: [MIT License](https://github.com/microsoft/onnxruntime/blob/main/LICENSE)
+- **Copyright**: © Microsoft Corporation
 
 ---
 
