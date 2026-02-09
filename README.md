@@ -18,7 +18,7 @@
 
 | Platform | Status |
 |----------|--------|
-| **iOS (iPhone / iPad)** | Beta |
+| **iOS (iPhone / iPad)** | [App Store](https://apps.apple.com/it/app/texvoice/id6758604969?l=en-GB) |
 
 ---
 
