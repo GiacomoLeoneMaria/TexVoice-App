@@ -63,12 +63,14 @@ TexVoice is an iOS application that transforms any text or PDF into high-quality
 - **Scrittura Diretta**: Incolla o scrivi direttamente il testo da convertire
 - **10 Voci AI**: 5 voci femminili (Aurora, Sofia, Emma, Luna, Stella) e 5 maschili (Marco, Luca, Leo, Alex, Matteo)
 - **5 Lingue Supportate**: Inglese, Spagnolo, Francese, Portoghese e Coreano
+- **Scelta del Motore TTS**: Scegli tra **Supertonic 2** (integrato, multilingue) e **Kokoro 82M** (scaricabile, qualità ancora più naturale)
 
 **🇬🇧 English:**
 - **PDF Import**: Upload PDF documents and automatically extract text
 - **Direct Writing**: Paste or directly write the text to convert
 - **10 AI Voices**: 5 female voices (Aurora, Sofia, Emma, Luna, Stella) and 5 male (Marco, Luca, Leo, Alex, Matteo)
 - **5 Languages Supported**: English, Spanish, French, Portuguese, and Korean
+- **TTS Engine Selection**: Choose between **Supertonic 2** (built-in, multilingual) and **Kokoro 82M** (downloadable, even more natural quality)
 
 ---
 
@@ -156,12 +158,14 @@ TexVoice is an iOS application that transforms any text or PDF into high-quality
 
 **🇮🇹 Italiano:**
 - **ONNX Runtime**: Motore di inferenza per l'esecuzione dei modelli di sintesi vocale
-- **Modulo Nativo Personalizzato**: `supertonic-tts` - modulo Expo nativo Swift per la sintesi text-to-speech ad alte prestazioni
+- **Supertonic 2** (`supertonic-tts`): modulo Expo nativo Swift, incluso nell'app, multilingue ad alte prestazioni
+- **Kokoro 82M** (`kokoro-tts`): motore TTS opzionale scaricabile dall'app (pesi ~88MB da HuggingFace), qualità vocale ancora più naturale
 - **Elaborazione On-Device**: Tutta la sintesi avviene localmente senza connessione internet
 
 **🇬🇧 English:**
 - **ONNX Runtime**: Inference engine for running speech synthesis models
-- **Custom Native Module**: `supertonic-tts` - native Expo Swift module for high-performance text-to-speech synthesis
+- **Supertonic 2** (`supertonic-tts`): native Expo Swift module, bundled in the app, multilingual and high-performance
+- **Kokoro 82M** (`kokoro-tts`): optional TTS engine downloadable from within the app (~88MB weights from HuggingFace), even more natural voice quality
 - **On-Device Processing**: All synthesis happens locally without internet connection
 
 ---
@@ -279,6 +283,23 @@ The heart of TexVoice is powered by [Supertonic 2](https://github.com/supertone-
 
 - **License**: [OpenRAIL-M](https://huggingface.co/Supertone/supertonic-2/blob/main/LICENSE)
 - **Copyright**: © 2026 Supertone Inc.
+
+---
+
+### Kokoro 82M — Text-to-Speech Model
+
+<p align="center">
+  <a href="https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX"><img src="https://img.shields.io/badge/🤗_Model-Hugging_Face-yellow?style=for-the-badge" alt="Model"></a>
+  <a href="https://github.com/remsky/Kokoro-FastAPI"><img src="https://img.shields.io/badge/💻_Code-GitHub-black?style=for-the-badge&logo=github" alt="Code"></a>
+</p>
+
+**🇮🇹 Italiano:**
+TexVoice supporta ora anche [Kokoro 82M](https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX), un modello TTS open-source di alta qualità con 82M di parametri. Il modello è scaricabile direttamente dall'app e viene eseguito interamente on-device tramite ONNX Runtime. Offre voci particolarmente naturali in inglese.
+
+**🇬🇧 English:**
+TexVoice now also supports [Kokoro 82M](https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX), a high-quality open-source TTS model with 82M parameters. The model can be downloaded directly from within the app and runs entirely on-device via ONNX Runtime. It delivers particularly natural-sounding voices in English.
+
+- **License**: [Apache 2.0](https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX/blob/main/LICENSE)
 
 ---
 
