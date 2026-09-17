@@ -1,6 +1,6 @@
 # Termini di Servizio
 
-**Ultimo aggiornamento: 2 Febbraio 2025**
+**Ultimo aggiornamento: 16 Settembre 2026**
 
 ## Accettazione dei Termini
 
@@ -23,9 +23,9 @@ https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 ## Componenti di Terze Parti e Licenze
 
-### Modello TTS Supertonic 2
+### Modello TTS Supertonic 3
 
-La funzionalità di sintesi vocale è alimentata da Supertonic 2, sviluppato da Supertone Inc. e licenziato sotto la **Licenza OpenRAIL-M**.
+La funzionalità di sintesi vocale è alimentata da Supertonic 3, sviluppato da Supertone Inc. e licenziato sotto la **Licenza OpenRAIL-M**.
 
 Utilizzando TexVoice, accetti di rispettare le restrizioni d'uso OpenRAIL-M. NON puoi utilizzare l'App per:
 
@@ -42,7 +42,21 @@ Utilizzando TexVoice, accetti di rispettare le restrizioni d'uso OpenRAIL-M. NON
 11. Fornire consulenza medica o interpretare risultati medici
 12. Generare contenuti per forze dell'ordine, immigrazione o processi decisionali di asilo
 
-Licenza completa: https://huggingface.co/Supertone/supertonic-2/blob/main/LICENSE
+Licenza completa: https://huggingface.co/Supertone/supertonic-3/blob/main/LICENSE
+
+### Modello TTS Kokoro 82M
+
+Un motore di sintesi vocale aggiuntivo, sviluppato da hexgrad e licenziato sotto la **Licenza Apache 2.0** (pienamente permissiva, senza restrizioni d'uso).
+https://huggingface.co/hexgrad/Kokoro-82M
+
+### Modello di Clonazione Vocale ZipVoice
+
+La funzione di clonazione vocale dell'App è alimentata da ZipVoice, sviluppato da k2-fsa e licenziato sotto la **Licenza Apache 2.0**.
+https://github.com/k2-fsa/ZipVoice
+
+### Vocos e Modello G2P Inglese
+
+Modelli di supporto on-device usati dalla funzione di clonazione vocale: Vocos (vocoder neurale, Licenza MIT, di gemelo.ai) e un modello grafemi-fonemi inglese (Licenza Apache 2.0, di PeterReid).
 
 ### ONNX Runtime
 
@@ -54,6 +68,10 @@ https://github.com/microsoft/onnxruntime/blob/main/LICENSE
 ## Uso Accettabile
 
 Accetti di utilizzare l'App solo per scopi leciti e in conformità con tutte le leggi applicabili. Sei responsabile di assicurarti di avere il diritto di convertire qualsiasi contenuto che inserisci nell'App.
+
+### Clonazione Vocale
+
+La funzione di clonazione vocale dell'App ti permette di registrare un breve campione di una voce e usarlo per narrare audiolibri. Accetti di registrare e clonare solo voci che hai il diritto di utilizzare — la tua voce, o una voce per cui hai consenso esplicito alla clonazione. Non puoi usare questa funzione per impersonare un'altra persona senza il suo consenso, o per creare contenuti audio ingannevoli.
 
 ---
 
