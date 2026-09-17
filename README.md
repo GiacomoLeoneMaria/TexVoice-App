@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="image/icon.png" alt="TexVoice Logo" width="400"/>
+  <img src="assets/icon.png" alt="TexVoice Logo" width="400"/>
 </p>
 
 <p align="center">
