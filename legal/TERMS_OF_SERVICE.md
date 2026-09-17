@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Last updated: February 2, 2025**
+**Last updated: September 16, 2026**
 
 ## Agreement to Terms
 
@@ -23,9 +23,9 @@ https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 ## Third-Party Components and Licenses
 
-### Supertonic 2 TTS Model
+### Supertonic 3 TTS Model
 
-The text-to-speech functionality is powered by Supertonic 2, developed by Supertone Inc. and licensed under the **OpenRAIL-M License**.
+The text-to-speech functionality is powered by Supertonic 3, developed by Supertone Inc. and licensed under the **OpenRAIL-M License**.
 
 By using TexVoice, you agree to comply with the OpenRAIL-M use restrictions. You may NOT use the App to:
 
@@ -42,7 +42,21 @@ By using TexVoice, you agree to comply with the OpenRAIL-M use restrictions. You
 11. Provide medical advice or interpret medical results
 12. Generate content for law enforcement, immigration, or asylum decision-making
 
-Full license: https://huggingface.co/Supertone/supertonic-2/blob/main/LICENSE
+Full license: https://huggingface.co/Supertone/supertonic-3/blob/main/LICENSE
+
+### Kokoro 82M TTS Model
+
+An additional text-to-speech engine, developed by hexgrad and licensed under the **Apache License 2.0** (fully permissive, no use-based restrictions).
+https://huggingface.co/hexgrad/Kokoro-82M
+
+### ZipVoice Voice Cloning Model
+
+The App's voice cloning feature is powered by ZipVoice, developed by k2-fsa and licensed under the **Apache License 2.0**.
+https://github.com/k2-fsa/ZipVoice
+
+### Vocos and English G2P Model
+
+Supporting on-device models used by the voice cloning feature: Vocos (neural vocoder, MIT License, by gemelo.ai) and an English graphemes-to-phonemes model (Apache License 2.0, by PeterReid).
 
 ### ONNX Runtime
 
@@ -54,6 +68,10 @@ https://github.com/microsoft/onnxruntime/blob/main/LICENSE
 ## Acceptable Use
 
 You agree to use the App only for lawful purposes and in compliance with all applicable laws. You are responsible for ensuring you have the right to convert any content you input into the App.
+
+### Voice Cloning
+
+The App's voice cloning feature lets you record a short sample of a voice and use it to narrate audiobooks. You agree to only record and clone voices you have the right to use — your own voice, or a voice you have explicit consent to clone. You may not use this feature to impersonate another person without their consent, or to create misleading audio content.
 
 ---
 
