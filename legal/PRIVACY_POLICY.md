@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Last updated: February 2, 2025**
+**Last updated: September 16, 2026**
 
 ## Introduction
 
@@ -51,12 +51,26 @@ The following data is stored locally on your device:
 
 - **Audiobooks**: Generated audio files are saved in the App's local storage
 - **Library Metadata**: Information about your audiobooks (title, author, duration, voice used) is stored locally
+- **Voice Recordings**: If you use the voice cloning feature, the voice sample you record and its transcript are stored locally, so the cloned voice can be reused for future audiobooks
 - **App Preferences**: Your settings and preferences are stored locally
 
 This data:
 - Never leaves your device
 - Is not accessible to us or any third party
-- Is deleted when you uninstall the App or manually delete items from your library
+- Is deleted when you delete the corresponding item in the App (e.g. a saved cloned voice) or when you uninstall the App
+
+---
+
+## Microphone Access
+
+The App requests microphone access only when you choose to use the voice cloning feature, to record a short sample of your voice. This recording:
+
+- Is processed and stored entirely on your device
+- Is never uploaded, transmitted, or shared with us or any third party
+- Is used solely to generate audiobooks narrated in that voice, on-device
+- Can be deleted at any time from within the App
+
+You are responsible for only recording and cloning voices you have the right to use (your own voice, or a voice you have explicit consent to clone).
 
 ---
 
@@ -65,7 +79,11 @@ This data:
 TexVoice does not integrate with any third-party analytics, advertising, or tracking services.
 
 The App uses the following open-source components for on-device processing only:
-- **Supertonic 2** (Text-to-Speech model) - Licensed under OpenRAIL-M
+- **Supertonic 3** (Text-to-Speech model) - Licensed under OpenRAIL-M
+- **Kokoro 82M** (Text-to-Speech model) - Licensed under Apache 2.0
+- **ZipVoice** (Voice cloning model) - Licensed under Apache 2.0
+- **Vocos** (Neural vocoder) - Licensed under MIT
+- **English G2P Model** (Text-to-phoneme model) - Licensed under Apache 2.0
 - **ONNX Runtime** (Inference engine) - Licensed under MIT
 
 These components run entirely on your device and do not transmit any data externally.
