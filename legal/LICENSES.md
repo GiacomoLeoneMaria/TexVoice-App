@@ -4,17 +4,17 @@ This document lists all third-party components used in TexVoice and their respec
 
 ---
 
-## Supertonic 2 — Text-to-Speech Model
+## Supertonic 3 — Text-to-Speech Model
 
 **Developer**: Supertone Inc.
 **License**: OpenRAIL-M License
 **Website**: https://supertone.ai
 **Repository**: https://github.com/supertone-inc/supertonic
-**Model**: https://huggingface.co/Supertone/supertonic-2
+**Model**: https://huggingface.co/Supertone/supertonic-3
 
 ### About
 
-Supertonic 2 is a lightning-fast, on-device text-to-speech system designed for extreme performance with minimal computational overhead. It supports multiple languages (English, Korean, Spanish, Portuguese, French) and runs entirely on-device.
+Supertonic 3 is a lightning-fast, on-device text-to-speech system designed for extreme performance with minimal computational overhead. It supports 31 languages and runs entirely on-device.
 
 ### License Summary
 
@@ -37,7 +37,62 @@ You may NOT use this model to:
 - (k) Provide medical advice or interpret medical results
 - (l) Generate content for law enforcement, immigration, or asylum processes
 
-**Full License**: https://huggingface.co/Supertone/supertonic-2/blob/main/LICENSE
+**Full License**: https://huggingface.co/Supertone/supertonic-3/blob/main/LICENSE
+
+---
+
+## Kokoro 82M — Text-to-Speech Model
+
+**Developer**: hexgrad
+**License**: Apache License 2.0
+**Model**: https://huggingface.co/hexgrad/Kokoro-82M
+
+### About
+
+Kokoro 82M is a high-quality, on-device text-to-speech model supporting 9 languages and 15 voices. Runs entirely on-device via ONNX Runtime.
+
+The Apache 2.0 License is fully permissive: it allows free use, modification, and distribution, with no use-based restrictions (unlike OpenRAIL-M above).
+
+**Full License**: https://huggingface.co/hexgrad/Kokoro-82M/blob/main/LICENSE.md
+
+---
+
+## ZipVoice — Voice Cloning Model
+
+**Developer**: k2-fsa
+**License**: Apache License 2.0
+**Repository**: https://github.com/k2-fsa/ZipVoice
+**Model**: https://huggingface.co/k2-fsa/ZipVoice
+
+### About
+
+ZipVoice is a zero-shot voice cloning text-to-speech model. Given a short recording of a voice and its transcript, it generates new speech in that voice. Runs entirely on-device via ONNX Runtime; the recorded voice sample never leaves the device.
+
+**Full License**: https://github.com/k2-fsa/ZipVoice/blob/master/LICENSE
+
+---
+
+## Vocos — Neural Vocoder
+
+**Developer**: gemelo.ai
+**License**: MIT License
+**Repository**: https://github.com/gemelo-ai/vocos
+
+### About
+
+Vocos is the neural vocoder used to turn ZipVoice's generated acoustic features into the final audio waveform. Runs entirely on-device.
+
+---
+
+## English Graphemes-to-Phonemes Model
+
+**Developer**: PeterReid
+**License**: Apache License 2.0
+**Model**: https://huggingface.co/PeterReid/graphemes_to_phonemes_en_us
+
+### About
+
+A small on-device model that converts English text into phonemes, used to prepare text for ZipVoice's voice cloning engine. Runs entirely on-device.
 
 ---
 
