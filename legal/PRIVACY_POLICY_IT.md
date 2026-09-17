@@ -1,6 +1,6 @@
 # Informativa sulla Privacy
 
-**Ultimo aggiornamento: 2 Febbraio 2025**
+**Ultimo aggiornamento: 16 Settembre 2026**
 
 ## Introduzione
 
@@ -44,18 +44,42 @@ I seguenti dati vengono memorizzati localmente sul tuo dispositivo:
 
 - **Audiolibri**: I file audio generati vengono salvati nello spazio di archiviazione locale dell'App
 - **Metadati della Libreria**: Informazioni sui tuoi audiolibri (titolo, autore, durata, voce utilizzata) vengono memorizzate localmente
+- **Registrazioni Vocali**: Se utilizzi la funzione di clonazione vocale, il campione vocale registrato e la sua trascrizione vengono memorizzati localmente, così la voce clonata può essere riutilizzata per futuri audiolibri
 - **Preferenze dell'App**: Le tue impostazioni e preferenze vengono memorizzate localmente
 
 Questi dati:
 - Non lasciano mai il tuo dispositivo
 - Non sono accessibili a noi o a terze parti
-- Vengono eliminati quando disinstalli l'App o elimini manualmente gli elementi dalla tua libreria
+- Vengono eliminati quando elimini l'elemento corrispondente nell'App (es. una voce clonata salvata) o quando disinstalli l'App
+
+---
+
+## Accesso al Microfono
+
+L'App richiede l'accesso al microfono solo quando scegli di utilizzare la funzione di clonazione vocale, per registrare un breve campione della tua voce. Questa registrazione:
+
+- Viene elaborata e memorizzata interamente sul tuo dispositivo
+- Non viene mai caricata, trasmessa o condivisa con noi o con terze parti
+- Viene utilizzata esclusivamente per generare audiolibri narrati con quella voce, on-device
+- Può essere eliminata in qualsiasi momento dall'interno dell'App
+
+Sei responsabile di registrare e clonare solo voci che hai il diritto di utilizzare (la tua voce, o una voce per cui hai consenso esplicito alla clonazione).
 
 ---
 
 ## Servizi di Terze Parti
 
 TexVoice non si integra con servizi di terze parti, piattaforme di analisi, reti pubblicitarie o strumenti di tracciamento.
+
+L'App utilizza i seguenti componenti open-source solo per l'elaborazione on-device:
+- **Supertonic 3** (modello Text-to-Speech) - Licenza OpenRAIL-M
+- **Kokoro 82M** (modello Text-to-Speech) - Licenza Apache 2.0
+- **ZipVoice** (modello di clonazione vocale) - Licenza Apache 2.0
+- **Vocos** (vocoder neurale) - Licenza MIT
+- **Modello G2P Inglese** (testo-fonema) - Licenza Apache 2.0
+- **ONNX Runtime** (motore di inferenza) - Licenza MIT
+
+Questi componenti funzionano interamente sul tuo dispositivo e non trasmettono alcun dato all'esterno.
 
 ---
 
