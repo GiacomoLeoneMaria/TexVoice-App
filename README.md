@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/icon.png" alt="TexVoice Logo" width="400"/>
+  <img src="image/icon.png" alt="TexVoice Logo" width="400"/>
 </p>
 
 <p align="center">
@@ -59,18 +59,22 @@ TexVoice is an iOS application that transforms any text or PDF into high-quality
 ### Conversione Testo in Audio / Text to Audio Conversion
 
 **🇮🇹 Italiano:**
-- **Importazione PDF**: Carica documenti PDF e estrai automaticamente il testo
+- **Importazione PDF ed EPUB**: Carica documenti PDF o EPUB e estrai automaticamente testo e struttura
 - **Scrittura Diretta**: Incolla o scrivi direttamente il testo da convertire
-- **10 Voci AI**: 5 voci femminili (Aurora, Sofia, Emma, Luna, Stella) e 5 maschili (Marco, Luca, Leo, Alex, Matteo)
-- **5 Lingue Supportate**: Inglese, Spagnolo, Francese, Portoghese e Coreano
-- **Scelta del Motore TTS**: Scegli tra **Supertonic 2** (integrato, multilingue) e **Kokoro 82M** (scaricabile, qualità ancora più naturale)
+- **10 Voci AI preimpostate**: 5 voci femminili (Aurora, Sofia, Emma, Luna, Stella) e 5 maschili (Marco, Luca, Leo, Alex, Matteo)
+- **31 Lingue Supportate** (con Supertonic 3): tra cui Inglese, Italiano, Spagnolo, Francese, Tedesco, Portoghese, Coreano, Giapponese e Cinese
+- **Tag di Espressione**: Supertonic 3 supporta tag per modulare l'espressività del parlato
+- **Clonazione Vocale**: con **ZipVoice** puoi clonare la tua voce (o quella di chiunque abbia dato consenso) da una breve registrazione e usarla per narrare i tuoi audiolibri
+- **Tre Motori TTS a Confronto**: scegli tra **Supertonic 3** (31 lingue, 10 voci, tag di espressione), **Kokoro 82M** (voci inglesi particolarmente naturali) e **ZipVoice** (clonazione vocale) — tutti scaricabili on-demand e utilizzabili offline
 
 **🇬🇧 English:**
-- **PDF Import**: Upload PDF documents and automatically extract text
+- **PDF & EPUB Import**: Upload PDF or EPUB documents and automatically extract text and structure
 - **Direct Writing**: Paste or directly write the text to convert
-- **10 AI Voices**: 5 female voices (Aurora, Sofia, Emma, Luna, Stella) and 5 male (Marco, Luca, Leo, Alex, Matteo)
-- **5 Languages Supported**: English, Spanish, French, Portuguese, and Korean
-- **TTS Engine Selection**: Choose between **Supertonic 2** (built-in, multilingual) and **Kokoro 82M** (downloadable, even more natural quality)
+- **10 Preset AI Voices**: 5 female voices (Aurora, Sofia, Emma, Luna, Stella) and 5 male (Marco, Luca, Leo, Alex, Matteo)
+- **31 Languages Supported** (with Supertonic 3): including English, Italian, Spanish, French, German, Portuguese, Korean, Japanese, and Chinese
+- **Expression Tags**: Supertonic 3 supports tags to modulate speech expressiveness
+- **Voice Cloning**: with **ZipVoice** you can clone your own voice (or anyone else's with consent) from a short recording and use it to narrate your audiobooks
+- **Three TTS Engines to Choose From**: pick between **Supertonic 3** (31 languages, 10 voices, expression tags), **Kokoro 82M** (particularly natural-sounding English voices), and **ZipVoice** (voice cloning) — all downloaded on demand and usable fully offline
 
 ---
 
@@ -158,28 +162,34 @@ TexVoice is an iOS application that transforms any text or PDF into high-quality
 
 **🇮🇹 Italiano:**
 - **ONNX Runtime**: Motore di inferenza per l'esecuzione dei modelli di sintesi vocale
-- **Supertonic 2** (`supertonic-tts`): modulo Expo nativo Swift, incluso nell'app, multilingue ad alte prestazioni
-- **Kokoro 82M** (`kokoro-tts`): motore TTS opzionale scaricabile dall'app (pesi ~88MB da HuggingFace), qualità vocale ancora più naturale
-- **Elaborazione On-Device**: Tutta la sintesi avviene localmente senza connessione internet
+- **Supertonic 3** (`supertonic-tts`): modulo Expo nativo Swift, scaricabile on-demand (~400MB da HuggingFace), 31 lingue, 10 voci preimpostate e tag di espressione
+- **Kokoro 82M** (`kokoro-tts`): motore TTS opzionale scaricabile dall'app (~360MB da HuggingFace), qualità vocale ancora più naturale in inglese
+- **ZipVoice** (`zipvoice-tts`): motore di clonazione vocale scaricabile dall'app (~185MB da HuggingFace), con G2P e DSP nativi in Swift, per narrare audiolibri con la propria voce
+- **Elaborazione On-Device**: Tutta la sintesi avviene localmente senza connessione internet, una volta scaricati i pesi del modello scelto
 
 **🇬🇧 English:**
 - **ONNX Runtime**: Inference engine for running speech synthesis models
-- **Supertonic 2** (`supertonic-tts`): native Expo Swift module, bundled in the app, multilingual and high-performance
-- **Kokoro 82M** (`kokoro-tts`): optional TTS engine downloadable from within the app (~88MB weights from HuggingFace), even more natural voice quality
-- **On-Device Processing**: All synthesis happens locally without internet connection
+- **Supertonic 3** (`supertonic-tts`): native Expo Swift module, downloaded on demand (~400MB from HuggingFace), 31 languages, 10 preset voices, and expression tags
+- **Kokoro 82M** (`kokoro-tts`): optional TTS engine downloadable from within the app (~360MB from HuggingFace), even more natural English voice quality
+- **ZipVoice** (`zipvoice-tts`): voice-cloning engine downloadable from within the app (~185MB from HuggingFace), with native Swift G2P and DSP, to narrate audiobooks in your own voice
+- **On-Device Processing**: All synthesis happens locally without internet connection once the chosen model's weights are downloaded
 
 ---
 
-### Estrazione PDF / PDF Extraction
+### Estrazione Documenti / Document Extraction
 
 **🇮🇹 Italiano:**
 - **PDFKit**: Framework nativo Apple per l'elaborazione dei PDF
-- **Modulo Nativo Personalizzato**: `pdf-text-extract` - modulo Expo nativo Swift per l'estrazione del testo dai PDF
+- **Modulo Nativo Personalizzato**: `pdf-text-extract` - modulo Expo nativo Swift per l'estrazione del testo e dei titoli dai PDF
+- **Parser EPUB**: estrazione di testo, struttura e metadati dai file EPUB (`utils/epub-parser.ts`)
+- **Rilevamento Capitoli Intelligente**: segmentazione semantica del testo per identificare automaticamente i capitoli anche in documenti senza una struttura esplicita
 - **Estrazione Metadati**: Recupera automaticamente titolo, autore e numero di pagine
 
 **🇬🇧 English:**
 - **PDFKit**: Native Apple framework for PDF processing
-- **Custom Native Module**: `pdf-text-extract` - native Expo Swift module for extracting text from PDFs
+- **Custom Native Module**: `pdf-text-extract` - native Expo Swift module for extracting text and headings from PDFs
+- **EPUB Parser**: extracts text, structure, and metadata from EPUB files (`utils/epub-parser.ts`)
+- **Smart Chapter Detection**: semantic text segmentation to automatically identify chapters even in documents without explicit structure
 - **Metadata Extraction**: Automatically retrieves title, author, and page count
 
 ---
@@ -248,40 +258,22 @@ TexVoice is an iOS application that transforms any text or PDF into high-quality
 
 ---
 
-## Roadmap / Coming Soon
-
-**🇮🇹 Italiano:**
-- 🔜 **Voice Cloning**: Clona la tua voce per narrare i tuoi audiolibri
-- 🔜 **Nuove Lingue**: Supporto per altre lingue nella sintesi vocale
-- 🔜 **Nuove Voci**: Ulteriori voci AI con diversi stili e accenti
-- 🔜 **Supporto Documenti**: Importazione di altri formati (EPUB, DOCX, TXT)
-- 🔜 **Android**: Versione per dispositivi Android
-
-**🇬🇧 English:**
-- 🔜 **Voice Cloning**: Clone your voice to narrate your audiobooks
-- 🔜 **New Languages**: Support for additional languages in speech synthesis
-- 🔜 **New Voices**: Additional AI voices with different styles and accents
-- 🔜 **Document Support**: Import of other formats (EPUB, DOCX, TXT)
-- 🔜 **Android**: Version for Android devices
-
----
-
 ## 🙏 Ringraziamenti e Riferimenti / Acknowledgments & References
 
-### Supertonic 2 — Text-to-Speech Model
+### Supertonic 3 — Text-to-Speech Model
 
 <p align="center">
-  <a href="https://huggingface.co/Supertone/supertonic-2"><img src="https://img.shields.io/badge/🤗_Model-Hugging_Face-yellow?style=for-the-badge" alt="Model"></a>
+  <a href="https://huggingface.co/Supertone/supertonic-3"><img src="https://img.shields.io/badge/🤗_Model-Hugging_Face-yellow?style=for-the-badge" alt="Model"></a>
   <a href="https://github.com/supertone-inc/supertonic"><img src="https://img.shields.io/badge/💻_Code-GitHub-black?style=for-the-badge&logo=github" alt="Code"></a>
 </p>
 
 **🇮🇹 Italiano:**
-Il cuore di TexVoice è alimentato da [Supertonic 2](https://github.com/supertone-inc/supertonic), un modello TTS ultra-veloce e multilingue sviluppato da [Supertone Inc](https://supertone.ai/). Supertonic è progettato per l'elaborazione on-device con prestazioni eccezionali — fino a **167× più veloce del tempo reale** — utilizzando solo 66M di parametri.
+Il cuore di TexVoice è alimentato da [Supertonic 3](https://github.com/supertone-inc/supertonic), un modello TTS ultra-veloce e multilingue (31 lingue) sviluppato da [Supertone Inc](https://supertone.ai/), con supporto a tag di espressione. Supertonic è progettato per l'elaborazione on-device con prestazioni eccezionali e viene scaricato la prima volta che si sceglie di usarlo.
 
 **🇬🇧 English:**
-The heart of TexVoice is powered by [Supertonic 2](https://github.com/supertone-inc/supertonic), an ultra-fast, multilingual TTS model developed by [Supertone Inc](https://supertone.ai/). Supertonic is designed for on-device processing with exceptional performance — up to **167× faster than real-time** — using only 66M parameters.
+The heart of TexVoice is powered by [Supertonic 3](https://github.com/supertone-inc/supertonic), an ultra-fast, multilingual (31 languages) TTS model developed by [Supertone Inc](https://supertone.ai/), with support for expression tags. Supertonic is designed for on-device processing with exceptional performance and is downloaded the first time it's selected.
 
-- **License**: [OpenRAIL-M](https://huggingface.co/Supertone/supertonic-2/blob/main/LICENSE)
+- **License**: [OpenRAIL-M](https://huggingface.co/Supertone/supertonic-3/blob/main/LICENSE)
 - **Copyright**: © 2026 Supertone Inc.
 
 ---
@@ -300,6 +292,23 @@ TexVoice supporta ora anche [Kokoro 82M](https://huggingface.co/onnx-community/K
 TexVoice now also supports [Kokoro 82M](https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX), a high-quality open-source TTS model with 82M parameters. The model can be downloaded directly from within the app and runs entirely on-device via ONNX Runtime. It delivers particularly natural-sounding voices in English.
 
 - **License**: [Apache 2.0](https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX/blob/main/LICENSE)
+
+---
+
+### ZipVoice — Voice Cloning Model
+
+<p align="center">
+  <a href="https://huggingface.co/k2-fsa/ZipVoice"><img src="https://img.shields.io/badge/🤗_Model-Hugging_Face-yellow?style=for-the-badge" alt="Model"></a>
+  <a href="https://github.com/k2-fsa/ZipVoice"><img src="https://img.shields.io/badge/💻_Code-GitHub-black?style=for-the-badge&logo=github" alt="Code"></a>
+</p>
+
+**🇮🇹 Italiano:**
+TexVoice integra anche [ZipVoice](https://huggingface.co/k2-fsa/ZipVoice) (variante `zipvoice_distill`, quantizzata INT8), un modello di clonazione vocale sviluppato dal team [k2-fsa](https://github.com/k2-fsa). Basta una breve registrazione della propria voce per generare audiolibri narrati con quella voce, interamente on-device. Attualmente disponibile solo in inglese.
+
+**🇬🇧 English:**
+TexVoice also integrates [ZipVoice](https://huggingface.co/k2-fsa/ZipVoice) (the `zipvoice_distill` variant, INT8-quantized), a voice cloning model developed by the [k2-fsa](https://github.com/k2-fsa) team. A short voice recording is enough to generate audiobooks narrated in that voice, entirely on-device. Currently available in English only.
+
+- **License**: [Apache 2.0](https://huggingface.co/k2-fsa/ZipVoice/blob/main/LICENSE)
 
 ---
 
